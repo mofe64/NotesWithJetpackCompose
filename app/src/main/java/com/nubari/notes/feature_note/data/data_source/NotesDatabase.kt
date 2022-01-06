@@ -10,4 +10,7 @@ import com.nubari.notes.feature_note.domain.model.Note
 )
 abstract class NotesDatabase: RoomDatabase() {
     abstract val noteDao: NoteDao
+    companion object {
+        const val DATABASE_NAME = "notes_db"
+    }
 }

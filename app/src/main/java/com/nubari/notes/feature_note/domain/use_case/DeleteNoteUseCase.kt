@@ -6,7 +6,7 @@ import com.nubari.notes.feature_note.domain.repository.NoteRepository
 class DeleteNoteUseCase(
     private val repository: NoteRepository
 ) {
-    suspend fun invoke(note: Note) {
+    suspend operator fun invoke(note: Note) {
         repository.deleteNote(note)
     }
 }
