@@ -110,10 +110,14 @@ fun NoteItem(
                 overflow = TextOverflow.Ellipsis
             )
         }
-        IconButton(onClick = onDeleteClick, modifier = Modifier.align(Alignment.BottomEnd)) {
+        IconButton(
+            onClick = onDeleteClick,
+            modifier = Modifier.align(Alignment.BottomEnd)
+        ) {
             Icon(
                 imageVector = Icons.Default.Delete,
-                contentDescription = "Delete"
+                contentDescription = "Delete",
+                tint = MaterialTheme.colors.onSurface
             )
         }
     }
