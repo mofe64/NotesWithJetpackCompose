@@ -92,7 +92,7 @@ fun NoteItem(
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(end = 32.dp)
+                .padding(start=16.dp,end = 32.dp, bottom = 16.dp)
         ) {
             Text(
                 text = note.title,
